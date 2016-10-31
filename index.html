@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <h1 style="text-align:center; color:steelblue"><bold> Oregon Population Density, 2016</bold></h1>
+    <title>Oregon Population Density, 2016</title>
+    <!-- D3.js Source -->
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <style>
 
-svg {
-  font: 10px sans-serif;
-}
+    svg {
+      font: 10px sans-serif;
+    }
 
-.caption {
-  font-weight: bold;
-}
+    .caption {
+      font-weight: bold;
+    }
 
-.key path {
-  display: none;
-}
+    .key path {
+      display: none;
+    }
 
-.key line {
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
+    .key line {
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
 
-.county-border {
-  fill: none;
-  stroke: #000;
-  stroke-opacity: .3;
-}
+    .county-border {
+      fill: none;
+      stroke: #000;
+      stroke-opacity: .3;
+    }
 
-</style>
+    </style>
+</head>
 <body>
-<script src="//d3js.org/d3.v3.min.js"></script>
-<script src="//d3js.org/topojson.v1.min.js"></script>
 <script>
 
 var width = 960,
@@ -116,3 +123,9 @@ d3.json("or.json", function(error, ca) {
 d3.select(self.frameElement).style("height", height + "px");
 
 </script>
+<h1 style="text-align:center; color:steelblue"><bold>
+Karol Josef Bustamante
+CMPS 165: Data programming for Visualization
+Fall 2016
+    </bold></h1>
+</body>
